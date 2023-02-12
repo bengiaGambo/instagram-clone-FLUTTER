@@ -13,7 +13,6 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        // backgroundColor: Colors.black,
         body: Column(
           children: [
             Image.asset('assets/instagram_logo.png'),

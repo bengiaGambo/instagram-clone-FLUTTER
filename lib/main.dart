@@ -11,6 +11,12 @@ class MyApp extends StatelessWidget {
   final _darkTheme = ThemeData(
     brightness: Brightness.light,
     primarySwatch: Colors.blue,
+    scaffoldBackgroundColor: Colors.black,
+    inputDecorationTheme: InputDecorationTheme(
+      outlineBorder: BorderSide.none,
+      fillColor: Colors.grey,
+      filled: true,
+    ),
   );
 
   @override
