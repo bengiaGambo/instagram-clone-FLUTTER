@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_clone/loginScreen/login_screen.dart';
+import 'package:instagram_clone/screens/login_screen/login_screen.dart';
 import 'package:instagram_clone/theme/dark_theme/dark_theme.dart';
 
 void main() {

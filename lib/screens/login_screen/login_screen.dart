@@ -45,7 +45,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   //login button
                   ElevatedButton(
                       onPressed: loginButtonEnabled ? () {} : null,
-                      child: const Text('Log in')),
+                      child: Text(
+                        'Log in',
+                      )),
                   const AddVerticalSpace(height: 12),
                   RichText(
                     text: TextSpan(children: [

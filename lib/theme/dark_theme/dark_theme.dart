@@ -10,17 +10,28 @@ class DarkTheme {
     primaryColor: primaryBlue,
     primarySwatch: Colors.blue,
     scaffoldBackgroundColor: Colors.black,
+    //text theme
     textTheme: TextTheme(
       bodySmall: GoogleFonts.sourceSansPro(
           fontWeight: FontWeight.w400, fontSize: 14, letterSpacing: -0.15),
+      bodyMedium: GoogleFonts.sourceSansPro(
+          fontWeight: FontWeight.w500, fontSize: 16, letterSpacing: -0.15),
       labelSmall: GoogleFonts.sourceSansPro(
           fontWeight: FontWeight.w600,
           fontSize: 14,
           color: primaryBlue,
           letterSpacing: -0.15),
+      labelLarge: GoogleFonts.sourceSansPro(
+          fontWeight: FontWeight.w600,
+          fontSize: 36,
+          color: primaryBlue,
+          letterSpacing: -0.15),
     ),
+    //elevated button
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
+        textStyle: GoogleFonts.sourceSansPro(
+            color: white, fontSize: 16, fontWeight: FontWeight.w600),
         disabledBackgroundColor: disabledButtonColor,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(7)),
         minimumSize: const Size(double.infinity, 44),
