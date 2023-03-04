@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_clone/screens/login_screen/login_screen.dart';
+import 'package:instagram_clone/screens/home_screen/home_screen.dart';
 import 'package:instagram_clone/theme/dark_theme/dark_theme.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'Instagram Clone',
       debugShowCheckedModeBanner: false,
       theme: DarkTheme().darkTheme,
-      home: const LoginScreen(),
+      home: const HomeScreen(),
     );
   }
 }

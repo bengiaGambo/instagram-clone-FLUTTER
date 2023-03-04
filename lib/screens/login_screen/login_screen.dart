@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_clone/custom_widgets/add_vertical_space.dart';
+import 'package:instagram_clone/custom_widgets/add_custom_space.dart';
 import 'package:instagram_clone/custom_widgets/my_textfield.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -45,7 +45,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   //login button
                   ElevatedButton(
                       onPressed: loginButtonEnabled ? () {} : null,
-                      child: Text(
+                      child: const Text(
                         'Log in',
                       )),
                   const AddVerticalSpace(height: 12),

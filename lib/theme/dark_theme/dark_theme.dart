@@ -9,7 +9,10 @@ class DarkTheme {
     brightness: Brightness.dark,
     primaryColor: primaryBlue,
     primarySwatch: Colors.blue,
-    scaffoldBackgroundColor: Colors.black,
+    scaffoldBackgroundColor: black,
+    appBarTheme: const AppBarTheme(backgroundColor: black),
+    bottomNavigationBarTheme:
+        const BottomNavigationBarThemeData(backgroundColor: black),
     //text theme
     textTheme: TextTheme(
       bodySmall: GoogleFonts.sourceSansPro(

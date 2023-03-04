@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_clone/custom_widgets/add_vertical_space.dart';
+import 'package:instagram_clone/custom_widgets/add_custom_space.dart';
 import 'package:instagram_clone/custom_widgets/my_textfield.dart';
 
 import '../../utils/colors.dart';
