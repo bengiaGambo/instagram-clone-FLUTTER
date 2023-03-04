@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_clone/screens/home_screen/home_screen.dart';
 import 'package:instagram_clone/theme/dark_theme/dark_theme.dart';
+import 'package:instagram_clone/utils/handle_route.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: DarkTheme().darkTheme,
       home: const HomeScreen(),
+      onGenerateRoute: GenerateRoute.generateRoute,
     );
   }
 }

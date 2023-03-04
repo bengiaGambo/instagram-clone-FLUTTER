@@ -4,14 +4,14 @@ import 'package:instagram_clone/custom_widgets/my_textfield.dart';
 
 import '../../utils/colors.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+class SignupScreen extends StatefulWidget {
+  const SignupScreen({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<SignupScreen> createState() => _SignupScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _SignupScreenState extends State<SignupScreen> {
   bool loginButtonEnabled = false;
   bool isUsername = true;
   bool isEmail = false;
