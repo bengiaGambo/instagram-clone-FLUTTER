@@ -12,7 +12,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  // List<Widget> navbarIcons = <Widget>[
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -43,11 +42,6 @@ class _HomeScreenState extends State<HomeScreen> {
               itemCount: 10,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                // return Column(
-                //   children: [
-                //     ListTile(title: singleStory()),
-                //   ],
-                // );
                 return singleStory();
               },
             ),
@@ -57,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: ListView.builder(
                   itemCount: 2,
                   itemBuilder: (context, index) {
-                    return Expanded(child: post());
+                    return postContainer();
                   })),
           //Bottom navbar
           Row(
@@ -74,6 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
+// Functions
   Expanded bottomNavbarIcon(IconData iconData) {
     return Expanded(
       child: GestureDetector(
@@ -94,7 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  //single story
+//single story
   Row singleStory() {
     return Row(
       children: [
@@ -107,8 +102,16 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  //single post
-  post() {
+// singlePost
+  AspectRatio post() {
+    return AspectRatio(
+      aspectRatio: 1 / 1,
+      child: Container(),
+    );
+  }
+
+//postContainer
+  postContainer() {
     return Column(
       children: [
         //top part
@@ -121,11 +124,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ]),
         // Expanded(child: Container()),
         // posts
-        AspectRatio(
-          aspectRatio: 1 / 1,
-          child: Container(),
-        ),
-
+        post(),
         // interactables
         Row(
           //like, comment, message icons
